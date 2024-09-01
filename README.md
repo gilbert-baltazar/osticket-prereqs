@@ -65,7 +65,7 @@ Step 4: Install/Enable IIS in Windows with CGI and Common HTTP features
 <img width="1532" alt="Screen Shot 2024-05-19 at 10 11 10 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/f752a179-4c8d-4696-9977-e19c824f6054">
   
 Step 5. Open the Installation files page here:
-[(https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)](https://drive.google.com/drive/folders/1h9A9xpidPwQy1-mtO9f05FAAVb9bvD1U?usp=share_link) 
+(https://drive.google.com/drive/folders/1h9A9xpidPwQy1-mtO9f05FAAVb9bvD1U?usp=share_link) 
 - Download and isntall PHP Manager for IIS
 - Download and install Rewrite Module
 - Download and install PHP 7.3.8
