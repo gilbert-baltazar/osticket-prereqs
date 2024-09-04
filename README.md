@@ -28,12 +28,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - HeidiSQL
 - Installation Files (https://drive.google.com/drive/folders/1h9A9xpidPwQy1-mtO9f05FAAVb9bvD1U?usp=share_link) <h2>Installation Steps</h2>
 
-<img width="1767" alt="Screen Shot 2024-05-19 at 9 08 59 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/35d881bb-b0d7-4969-a021-d7b583ec2343">
+![Screenshot 2024-09-02 at 8 47 41 PM](https://github.com/user-attachments/assets/9e595ae7-a75d-4fd2-a85a-53f5ad6ac464)
 
 Step 1. Create a Resource Group in Azure 
-
   
-<img width="1078" alt="Screen Shot 2024-05-19 at 9 11 36 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/472a4d2f-9633-4839-bff1-92fe174f459e">
+![Screenshot 2024-09-02 at 8 50 14 PM](https://github.com/user-attachments/assets/592127c7-cf2c-41d8-bcaa-e2a4f260ef77)
 
 Step 2. Create a Windows 10 pro Virtual Machine (VM) with 2-4 Virtual CPUs
   -  Name: VM-osTicket
@@ -43,14 +42,14 @@ Step 2. Create a Windows 10 pro Virtual Machine (VM) with 2-4 Virtual CPUs
   - Click Review+Create
 
   
-<img width="1849" alt="Screen Shot 2024-05-19 at 9 16 44 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/dc073a69-65c0-41f4-87ab-fdfb053814b6">
+![Screenshot 2024-09-03 at 5 39 49 PM](https://github.com/user-attachments/assets/83efd003-d1b0-4991-93f5-641bc8c2264a)
 
 Step 3. Open Microsoft Remote Desktop (If on Mac Desktop)
   - Click Add PC and enter your VMs public IP (Wait until the VM finishes deploying) 
   - Enter the username and password you put in for your VM
 
 
-<img width="1214" alt="Screen Shot 2024-05-19 at 9 36 44 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/ca4884b9-8dfb-4198-a555-f2368427475d">
+![Screenshot 2024-09-03 at 5 53 12 PM](https://github.com/user-attachments/assets/ea342963-3016-4c75-994a-4450cda04877)
 
 Step 4: Install/Enable IIS in Windows with CGI and Common HTTP features 
 - right click on the "start" icon, Click run, and enter "control"
@@ -62,7 +61,7 @@ Step 4: Install/Enable IIS in Windows with CGI and Common HTTP features
 	[X] IIS Management Console
 - Click Ok
 
-<img width="1532" alt="Screen Shot 2024-05-19 at 10 11 10 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/f752a179-4c8d-4696-9977-e19c824f6054">
+![Screenshot 2024-09-03 at 6 01 56 PM](https://github.com/user-attachments/assets/1bd04e3a-fe78-4c2d-9645-4dc8287c8ddc)
   
 Step 5. Open the Installation files page here:
 (https://drive.google.com/drive/folders/1h9A9xpidPwQy1-mtO9f05FAAVb9bvD1U?usp=share_link) 
@@ -76,11 +75,11 @@ Step 5. Open the Installation files page here:
 Note: if you dont see anything happen immediately after clicking download, give it a few seconds. 
 
 
-<img width="1332" alt="Screen Shot 2024-05-19 at 10 04 33 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/8a72fa53-8fbf-4840-bdc3-1ed62d68511f">
+![Screenshot 2024-09-03 at 6 16 46 PM](https://github.com/user-attachments/assets/95deeb76-10a8-4fd5-b17c-fb3aedc19f66)
 
 When PHP 7.3.8 is finished downloading, Create a folder "PHP" on Windows (C:). right click the PHP 7.3.8 file -> extract all -> browse -> This PC -> Windows (C:) -> PHP -> Select Folder -> Extract
 
-<img width="1137" alt="Screen Shot 2024-05-19 at 10 24 24 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/8f600f98-ee68-4419-aa7f-0ea2384d0d0b">
+![Screenshot 2024-09-03 at 6 25 10 PM](https://github.com/user-attachments/assets/23955c8b-b07e-4aa0-af19-51915a2164e0)
 
 Step 6. Open IIS as an Admin
 - on the search bar type IIS -> right click on IIS and click "run as administrator"
@@ -88,7 +87,7 @@ Step 6. Open IIS as an Admin
 - Click on PHP Manager -> Register new PHP version -> "..." -> this PC -> PHP -> php-cgi -> open
 - Go back to the home page and click "Restart"
 
-<img width="823" alt="Screen Shot 2024-05-19 at 10 32 17 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/89c39bc9-7e69-4187-967f-1a15fd8ef549">
+![Screenshot 2024-09-03 at 6 35 04 PM](https://github.com/user-attachments/assets/b7ce868e-b324-4753-a048-1f8572ff04f2)
 
 Step 7. Download and Install osTicket v1.15.8
 - When downloaded, open the osTicket file
@@ -97,7 +96,7 @@ Step 7. Download and Install osTicket v1.15.8
 - Rename the "upload" folder to "osTicket
 
 
-<img width="1533" alt="Screen Shot 2024-05-19 at 10 37 17 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/90384f4f-d932-4134-873b-72fac36da6c9">
+![Screenshot 2024-09-03 at 6 36 10 PM](https://github.com/user-attachments/assets/76786c00-0296-414d-ba05-a1adaf3e9416)
 
 Step 8. Go back to IIS Manager
 - Click restart
@@ -107,7 +106,7 @@ Step 8. Go back to IIS Manager
 
 Note: if you dont see this and instead an error page, something was done wrong. 
 
-<img width="909" alt="Screen Shot 2024-05-19 at 10 44 42 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/55ab8449-d9e2-4d8f-9a8a-d026fe10278d">
+![Screenshot 2024-09-03 at 6 39 43 PM](https://github.com/user-attachments/assets/b7e60e43-aef2-4140-b8bb-266e9b7a63ea)
 
 Step 9. Some extensions are not enabled. 
 - Go back to IIS -> sites -> Default -> osTicket
@@ -118,14 +117,14 @@ Step 9. Some extensions are not enabled.
    Enable: php_opcache.dll
   
 
-<img width="1683" alt="Screen Shot 2024-05-19 at 10 45 01 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/7153ee4b-9d13-4e17-ab82-b3af48a36d0f">
+![Screenshot 2024-09-03 at 6 49 57 PM](https://github.com/user-attachments/assets/cfdd800e-086c-48a5-bd79-ccef835cb959)
   
 Refresh the osTicket site in your browser, observe the changes
 
 
 
 
-<img width="798" alt="Screen Shot 2024-05-19 at 10 50 39 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/09c14a6d-8af3-48a6-9e39-2939718dd12b">
+![Screenshot 2024-09-03 at 6 51 20 PM](https://github.com/user-attachments/assets/10f54581-468e-4596-a732-e385996f80ff)
 
 Step 10. Rename: ost-config.php
  - Go to the wwwroot folder
@@ -134,7 +133,7 @@ Step 10. Rename: ost-config.php
  - Right click ost-config.php -> Properties -> Security -> Advance -> Disable inheritance -> Remove all -> Add -> Select Principle -> type "Everyone" -> Ok -> click "Full Controll" -> ok -> Apply and then OK
 
 
-<img width="693" alt="Screen Shot 2024-05-19 at 11 05 09 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/1b9810b8-dd89-4864-ade0-7174ee03ab63">
+![Screenshot 2024-09-03 at 7 04 31 PM](https://github.com/user-attachments/assets/5da075f8-33f4-4899-bff9-216864b000f6)
 
 Step 11. Download and Install HeidiSQL
  - Open HeidiSQL
@@ -142,18 +141,17 @@ Step 11. Download and Install HeidiSQL
  - Connect to the session
  - Create a database called "osTicket"
 
+![Screenshot 2024-09-03 at 7 06 52 PM](https://github.com/user-attachments/assets/014c7c2e-295d-49fc-a1d8-b3f3747b8cd1)
 
-<img width="1685" alt="Screen Shot 2024-05-19 at 11 07 01 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/20749194-2394-4e34-85da-8c9b8f0cbee7">
- 
 Step 11. Continue Setting up Osticket in the browser
  - Name HelpDesk
- - Derek@helper.com (receives email from customers)
+ - johndoek@helper.com (receives email from customers)
  - MySQL Database: osTicket
  - MySQL Username: root
  - MySQL Password: Password1
  - Click "Install Now!"
 
-<img width="1684" alt="Screen Shot 2024-05-19 at 11 11 41 AM" src="https://github.com/DereHz/osTicket-prereqs/assets/169094076/8cef074d-347a-4aa8-9964-755133a3ba63">
+![Screenshot 2024-09-03 at 7 10 54 PM](https://github.com/user-attachments/assets/18790fe4-e6ef-4a15-93f5-715c8cbe0acb)
 
 "Congratulations"
 
